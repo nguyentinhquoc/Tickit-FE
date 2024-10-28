@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Detail</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
+  <!-- nhung file js  -->
+  <link rel="stylesheet" href="assets/css/app.css" />
+  <link rel="stylesheet" href="./assets/css/customer.css" />
+</head>
+
+<body>
+  <header>
+    <div class="d-flex justify-content-between p-14">
+      <div>
+        <img src="assets/svg/logo.svg" alt="" />
+      </div>
+      <div class="d-flex">
+        <div class="header--icon icon-search">
+          <img src="assets/svg/icon/Search_alt.svg" alt="" />
+        </div>
+        <div>
+          <input type="text" class="input-search" placeholder="Search...">
+        </div>
+        <div class="header--icon icon-pin">
+          <img src="assets/svg/icon/Pin.svg" alt="" />
+        </div>
+        <div class="province-list" style="display:none;">
+          <ul>
+            <li>Hà Nội</li>
+            <li>Hồ Chí Minh</li>
+            <li>Đà Nẵng</li>
+            <li>Quảng Ninh</li>
+            <li>Huế</li>
+            <!-- Thêm các tỉnh thành khác vào đây -->
+          </ul>
+        </div>
+        <div class="header--icon">
+          <img src="assets/svg/icon/Filter.svg" alt="" />
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Thong tin khach hàng -->
+  <section class="p-14 ttkh">
+    <div class="title d-flex al-center justify-content-between">
+      <h2 class="font-heding">Thông tin khách hàng</h2>
+      <div class="seemore">
+        <span>Xem thêm</span> <span><img src="./assets/svg/icon/Arrow.svg" alt="" /></span>
+      </div>
+    </div>
+    <div class="title-child font-body">3 NGƯỜI LỚN | 2 TRẺ EM | 1 EM BÉ</div>
+    <div class="user">
+      <div class="user-name">
+        <h3 class="font-body">
+          NGƯỜI LỚN : <span id="nodetext">*</span>(Viết hoa không dấu)
+        </h3>
+      </div>
+      <div class="d-flex justify-content-between input-cha ">
+        <div class="input-container left">
+
+          <div class="form">
+            <input type="text" id="name-adult-one" class="form_input" autocomplete="off" placeholder=" ">
+            <p class="error-p"></p>
+            <label for="trackName" class="form_label">
+              Họ và tên
+            </label>
+          </div>
+
+        </div>
+        <div class="select-sex right">
+          <select name="sex" id="select-sex-one">
+            <option value="ong">ÔNG</option>
+            <option value="ba">Bà</option>
+          </select>
+        </div>
+      </div>
+      <div class="d-flex justify-content-between input-cha ">
+        <div class="input-container left">
+
+
+          <div class="form">
+            <input type="text" id="name-adult-tow" class="form_input" autocomplete="off" placeholder=" ">
+            <p class="error-p"></p>
+            <label for="trackName" class="form_label">
+              Họ và tên
+            </label>
+          </div>
+
+
+        </div>
+        <div class="select-sex right">
+          <select name="sex" id="select-sex-tow">
+            <option value="ong">ÔNG</option>
+            <option value="ba">Bà</option>
+          </select>
+        </div>
+      </div>
+      <div class="d-flex justify-content-between input-cha ">
+        <div class="input-container left">
+
+
+          <div class="form">
+            <input type="text" id="name-adult-there" class="form_input" autocomplete="off" placeholder=" ">
+            <p class="error-p"></p>
+            <label for="trackName" class="form_label">
+              Họ và tên
+            </label>
+          </div>
+        </div>
+        <div class="select-sex right">
+          <select name="sex" id="select-sex-there">
+            <option value="ong">ÔNG</option>
+            <option value="ba">Bà</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="user">
+      <div class="user-name">
+        <h3 class="font-body">
+          TRẺ EM : <span id="nodetext">*</span>(Viết hoa không dấu)
+        </h3>
+      </div>
+      <div>
+        <div class="d-flex justify-content-between input-cha ">
+          <div class="input-container left">
+            <div class="form">
+              <input type="text" id="name-child-one" class="form_input" autocomplete="off" placeholder=" ">
+              <p class="error-p"></p>
+              <label for="trackName" class="form_label">
+                Họ và tên
+              </label>
+            </div>
+          </div>
+          <div class="select-sex right">
+            <select name="sex" id="select-sex-one-child">
+              <option value="betrai">BÉ TRAI</option>
+              <option value="begai">BÉ GÁI</option>
+            </select>
+          </div>
+        </div>
+        <div class="date-picker-container">
+          <label for="birth-date" class="custom-label-date font-body">
+            <img src="./assets/svg/icon/Icon_customer/dateOr.svg" alt="calendar icon" class="calendar-icon" />
+            NGÀY SINH: <span>*</span>
+          </label>
+          <input type="text" id="birth-date-child-one" class="date-input birth-date-child-one" value="26/10/2024" />
+        </div>
+      </div>
+      <div>
+        <div class="d-flex justify-content-between input-cha ">
+          <div class="input-container left">
+            <div class="form">
+              <input type="text" id="name-child" class="form_input" autocomplete="off" placeholder=" ">
+              <p class="error-p"></p>
+              <label for="trackName" class="form_label">
+                Họ và tên
+              </label>
+            </div>
+          </div>
+          <div class="select-sex right">
+            <select name="sex" id="select-sex-one-child-two">
+              <option value="betrai">BÉ TRAI</option>
+              <option value="begai">BÉ GÁI</option>
+            </select>
+          </div>
+        </div>
+        <div class="date-picker-container">
+          <label for="birth-date" class="custom-label-date font-body">
+            <img src="./assets/svg/icon/Icon_customer/dateOr.svg" alt="calendar icon" class="calendar-icon" />
+            NGÀY SINH: <span>*</span>
+          </label>
+          <input type="text" id="birth-date-child-two" class="date-input" value="26/10/2024" />
+        </div>
+      </div>
+    </div>
+    <div class="user ">
+      <div class="user-name">
+        <h3 class="font-body">
+          EM BÉ : <span id="nodetext">*</span>(Viết hoa không dấu)
+        </h3>
+      </div>
+      <div>
+        <div class="d-flex justify-content-between  input-cha">
+          <div class="input-container left">
+
+
+            <div class="form">
+              <input type="text" id="name-baby" class="form_input" autocomplete="off" placeholder=" ">
+              <p class="error-p"></p>
+              <label for="trackName" class="form_label">
+                Họ và tên
+              </label>
+            </div>
+
+          </div>
+          <div class="select-sex right">
+            <select name="sex" id="select-sex-baby">
+              <option value="betrai">BÉ TRAI</option>
+              <option value="begai">BÉ GÁI</option>
+            </select>
+          </div>
+        </div>
+        <div class="date-picker-container">
+          <label for="birth-date" class="custom-label-date font-body">
+            <img src="./assets/svg/icon/Icon_customer/dateOr.svg" alt="calendar icon" class="calendar-icon" />
+            NGÀY SINH: <span>*</span>
+          </label>
+          <input type="text" id="birth-date-baby" class="date-input" value="26/10/2024" />
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <br />
+  <!-- Thong tin lien he -->
+  <section class="p-14 ttkh">
+    <div class="title d-flex al-center justify-content-between ">
+      <h2 class="font-heding">Thông tin liên hệ</h2>
+      <div class="seemore">
+        <span>Xem thêm</span> <span><img src="./assets/svg/icon/Arrow.svg" alt="" /></span>
+      </div>
+    </div>
+    <div class="tb-check checkinformatino  font-body">
+      <input type="checkbox" name="" id="checkbox">
+      <span> Sử dụng thông tin khách hàng làm thông tin người đại diện</span>
+    </div>
+    <div class="user ">
+      <div class="user-name">
+        <h3 class="font-body">
+          NGƯỜI ĐẠI DIỆN : <span id="nodetext">*</span>
+        </h3>
+      </div>
+      <div class="d-flex justify-content-between input-cha ">
+        <div class="input-container left">
+
+          <div class="form">
+            <input type="text" id="name-lh" class="form_input" autocomplete="off" placeholder=" ">
+            <p class="error-p"></p>
+            <label for="trackName" class="form_label">
+              Họ và tên
+            </label>
+          </div>
+
+        </div>
+        <div class="select-sex right">
+          <select name="sex" id="select-sex-lh">
+            <option value="ong">ÔNG</option>
+            <option value="ba">Bà</option>
+          </select>
+        </div>
+      </div>
+      <div class=" input-value">
+        <div class="form">
+          <input type="text" id="phone-lh" class="form_input" autocomplete="off" placeholder=" ">
+          <p class="error-p"></p>
+          <label for="trackName" class="form_label">
+            Số Điện Thoại
+          </label>
+        </div>
+      </div>
+      <div class="input-value">
+        <div class="form ">
+          <input type="text" id="email-lh" class="form_input" autocomplete="off" placeholder=" ">
+          <p class="error-p"></p>
+          <label for="trackName" class="form_label">
+            EMAIL
+          </label>
+        </div>
+
+      </div>
+      <div class="input-value">
+        <div class="form">
+          <input type="text" id="adderss-lh" class="form_input" autocomplete="off" placeholder=" ">
+          <p class="error-p"></p>
+          <label for="trackName" class="form_label">
+            Địa Chỉ
+          </label>
+        </div>
+
+      </div>
+      <div class="input-value">
+        <div class="form">
+          <input type="text" id="node-lh" class="form_input" autocomplete="off" placeholder=" ">
+          <p class="error-p"></p>
+          <label for="trackName" class="form_label">
+            Ghi Chú
+          </label>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br />
+  <!-- Thong tin xuat hoa don -->
+  <section class="p-14 ttkh">
+    <div class="title d-flex al-center justify-content-between ">
+      <h2 class="font-heding">Thông tin xuất hóa đơn</h2>
+      <div class="seemore">
+        <span>Xem thêm</span> <span><img src="./assets/svg/icon/Arrow.svg" alt="" /></span>
+      </div>
+    </div>
+    <div class="tb-check font-body">
+      <div class="tb-check checkinformatino  font-body">
+        <input type="checkbox" name="" id="checkbox">
+        <span> Sử dụng thông tin khách hàng làm thông tin người đại diện</span>
+      </div>
+      <div class="user ">
+        <div class="user-name">
+          <h3 class="font-body">
+            NGƯỜI ĐẠI DIỆN : <span id="nodetext">*</span>
+          </h3>
+        </div>
+        <div class="d-flex justify-content-between input-cha ">
+          <div class="input-container left">
+            <div class="form">
+              <input type="text" id="name-hh" class="form_input" autocomplete="off" placeholder=" ">
+              <p class="error-p"></p>
+              <label for="trackName" class="form_label">
+                Họ và tên
+              </label>
+            </div>
+
+          </div>
+          <div class="select-sex right">
+            <select name="sex" id="select-sex-hh">
+              <option value="ong">ÔNG</option>
+              <option value="ba">Bà</option>
+            </select>
+          </div>
+        </div>
+        <div class="input-value">
+          <div class="form">
+            <input type="text" id="mst-hh" class="form_input" autocomplete="off" placeholder=" ">
+            <p class="error-p"></p>
+            <label for="trackName" class="form_label">
+              Mã Số Thuế
+            </label>
+          </div>
+
+        </div>
+        <div class="input-value">
+          <div class="form">
+            <input type="email" id="email-hh" class="form_input" autocomplete="off" placeholder=" ">
+            <p class="error-p"></p>
+            <label for="trackName" class="form_label">
+              EMAIL
+            </label>
+          </div>
+
+        </div>
+        <div class="input-value">
+          <div class="form">
+            <input type="email" id="addrss-hh" class="form_input" autocomplete="off" placeholder=" ">
+            <p class="error-p"></p>
+            <label for="trackName" class="form_label">
+              Địa Chỉ
+            </label>
+          </div>
+
+
+        </div>
+        <div class="input-value">
+          <div class="form">
+            <input type="text" id="node-lh" class="form_input" autocomplete="off" placeholder=" ">
+            <p class="error-p"></p>
+            <label for="trackName" class="form_label">
+              Ghi Chú
+            </label>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- Thanh tona -->
+  <section class="thank-price p-14">
+    <div class="price-lod d-flex al-center justify-content-between">
+      <span>SỐ TIỀN TẠM TÍNH</span>
+      <span>4,366,000 VDN</span>
+    </div>
+    <div class="btn-succsit bg-success">XÁC NHẬN</div>
+  </section>
+  <!-- nav  -->
+  <nav class="nav2">
+    <div class="d-flex justify-content-between p-14">
+      <div class="nav-item d-flex">
+        <img src="assets/svg/icon/menuFixed/Home.svg" alt="" />
+        <p class="mt-3">Home</p>
+      </div>
+      <div class="nav-item d-flex">
+        <img src="assets/svg/icon/menuFixed/Tickit.svg" alt="" />
+        <p class="mt-3">Vé của tôi</p>
+      </div>
+      <div class="nav-item d-flex">
+        <img src="assets/svg/icon/menuFixed/Product.svg" alt="" />
+        <p class="mt-3">Sản phẩm</p>
+      </div>
+      <div class="nav-item d-flex">
+        <img src="assets/svg/icon/menuFixed/Love.svg" alt="" />
+        <p class="mt-3"> Yêu thích</p>
+      </div>
+      <div class="nav-item d-flex">
+        <img src="assets/svg/icon/menuFixed/Profile.svg" alt="" />
+        <p class="mt-3">Cá nhân</p>
+      </div>
+    </div>
+  </nav>
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script src="./assets/js/customer.js"></script>
+  <script src="./assets/js/app.js"></script>
+</body>
+
+</html>

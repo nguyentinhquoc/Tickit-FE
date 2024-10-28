@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Main-Oficial</title>
+    <link rel="stylesheet" href="assets/css/Main-Official.css" />
+    <link rel="stylesheet" href="assets/css/app.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <header>
+        <div class="d-flex justify-content-between p-14">
+            <div>
+                <img src="assets/svg/logo.svg" alt="" />
+            </div>
+            <div class="d-flex">
+                <div class="header--icon icon-search">
+                    <img src="assets/svg/icon/Search_alt.svg" alt="" />
+                </div>
+                <div>
+                    <input type="text" class="input-search" placeholder="Search..." />
+                </div>
+                <div class="header--icon icon-pin">
+                    <img src="assets/svg/icon/Pin.svg" alt="" />
+                </div>
+                <div class="province-list">
+                    <ul>
+                        <li>Hà Nội</li>
+                        <li>Hồ Chí Minh</li>
+                        <li></li>
+                        <li>Quảng Ninh</li>
+                        <li>Huế</li>
+                        <!-- Thêm các tỉnh thành khác vào đây -->
+                    </ul>
+                </div>
+                <div class="header--icon">
+                    <img src="assets/svg/icon/Filter.svg" alt="" />
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="section-slider">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="assets/image/Banner1.jpg" alt="" width="100%" />
+                    <span class="price bg-danger">360,000VND</span>
+                    <div>
+                        <p class="content">Tour 6 nước Châu Âu 2024 Pari - Luxembure - Amsteda...
+                            </p>
+                            <br>
+                           <span class="location">
+                            <img src="assets/svg/icon/slider/Pin.svg" alt="" />
+                             Hạ Long, Quảng Ninh</span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/image/Banner1.jpg" alt="" width="100%" />
+                    <span class="price bg-danger">360,000VND</span>
+                    <div>
+                        <p class="content">Tour 6 nước Châu Âu 2024 Pari - Luxembure - Amsteda...
+                            </p>
+                            <br>
+                           <span class="location">
+                            <img src="assets/svg/icon/slider/Pin.svg" alt="" />
+                             Hạ Long, Quảng Ninh</span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/image/Banner1.jpg" alt="" width="100%" />
+                    <span class="price bg-danger">360,000VND</span>
+                    <div>
+                        <p class="content">Tour 6 nước Châu Âu 2024 Pari - Luxembure - Amsteda...
+                            </p>
+                            <br>
+                           <span class="location">
+                            <img src="assets/svg/icon/slider/Pin.svg" alt="" />
+                             Hạ Long, Quảng Ninh</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <main>
+        <nav>
+            <div class="d-flex justify-content-between bg-info-transparent p-14 nav1">
+                <!-- Hiển thị các mục này ban đầu -->
+                <div class="nav-item d-flex">
+                    <img src="assets/svg/icon/menu/Theater.svg" alt="" />
+                    <p class="mt-3">Nhà hát</p>
+                </div>
+                <div class="nav-item d-flex">
+                    <img src="assets/svg/icon/menu/Museum.svg" alt="" />
+                    <p class="mt-3">Bảo tàng</p>
+                </div>
+                <div class="nav-item d-flex">
+                    <img src="assets/svg/icon/menu/Sport.svg" alt="" />
+                    <p class="mt-3">Thể thao</p>
+                </div>
+                <div class="nav-item d-flex">
+                    <img src="assets/svg/icon/menu/Exhibition.svg" alt="" />
+                    <p class="mt-3">Triển lãm</p>
+                </div>
+                <div class="nav-item d-flex">
+                    <img src="assets/svg/icon/menu/Amusement.svg" alt="" />
+                    <p class="mt-3">Khu vui chơi</p>
+                </div>
+                <!-- Các mục ẩn ban đầu -->
+                <div class="nav-item d-flex extra" style="display: none">
+                    <img src="assets/svg/icon/menu/Amusement.svg" alt="" />
+                    <p class="mt-3">Khu giải trí</p>
+                </div>
+                <div class="nav-item d-flex extra" style="display: none">
+                    <img src="assets/svg/icon/menu/Amusement.svg" alt="" />
+                    <p class="mt-3">Khu đặt vé</p>
+                </div>
+                <!-- Nút mở rộng -->
+                <div class="nav-item d-flex" id="expand-button">
+                    <img src="assets/svg/icon/menu/Expand.svg" alt="" />
+                    <p class="mt-3">Mở rộng</p>
+                </div>
+            </div>
+        </nav>
+        <nav class="nav2">
+            <div class="d-flex justify-content-between p-14">
+                <div class="nav-item d-flex">
+                    <img src="assets/svg/icon/menuFixed/Home.svg" alt="" />
+                    <p class="mt-3">Home</p>
+                </div>
+                <div class="nav-item d-flex">
+                    <img src="assets/svg/icon/menuFixed/Tickit.svg" alt="" />
+                    <p class="mt-3">Vé của tôi</p>
+                </div>
+                <div class="nav-item d-flex">
+                    <img src="assets/svg/icon/menuFixed/Product.svg" alt="" />
+                    <p class="mt-3">Sản phẩm</p>
+                </div>
+                <div class="nav-item d-flex">
+                    <img src="assets/svg/icon/menuFixed/Love.svg" alt="" />
+                    <p class="mt-3">Yêu thích</p>
+                </div>
+                <div class="nav-item d-flex">
+                    <img src="assets/svg/icon/menuFixed/Profile.svg" alt="" />
+                    <p class="mt-3">Cá nhân</p>
+                </div>
+            </div>
+        </nav>
+        <section class="p-14">
+            <div class="h-section">
+                <h3>Nội dung vừa xem</h3>
+            </div>
+            <article class="d-flex justify-content-between section-old">
+                <div class="d-flex">
+                    <img src="assets/image/img2.jpg" alt="Thị Mẫu lên chùa" />
+                    <div class="content-old">
+                        <p>Thị Mẫu lên chùa</p>
+                        <span>19 - 29 tháng 8, 1 khách</span>
+                    </div>
+                </div>
+                <div class="arrow">&#8250;</div>
+            </article>
+        </section>
+        <section>
+            <div class="section-event p-14 bg-info-transparent">
+                <div class="h-section d-flex justify-content-between">
+                    <h3>Sự kiện đặc sắc</h3>
+                    <a href="#">Xem thêm &#8250;</a>
+                </div>
+                <div class="all-item d-flex">
+                    <article class="article-event">
+                        <div class="img">
+                            <img src="assets/image/96e24eaaf8d3e6567b7a5346c45bb52b.jpg" class="thumail-Id6 thumail"
+                                alt="" />
+                            <img src="assets/svg/icon/article/loveChecked.svg" alt="" class="icon-love" />
+                            <span class="sale bg-danger">-15%</span>
+                            <span class="date">Hết hạn sau: 34 ngày 12:08:17</span>
+                        </div>
+                        <div class="article-event-content p-14">
+                            <div class="d-flex justify-content-between">
+                                <p class="category bg-danger">Thể thao</p>
+                                <div class="view">
+                                    <span class="d-flex">
+                                        <img src="assets/svg/icon/article/StartLight.svg" alt="" />
+                                        <img src="assets/svg/icon/article/StartLight.svg" alt="" />
+                                        <img src="assets/svg/icon/article/StartLight.svg" alt="" />
+                                        <img src="assets/svg/icon/article/StartLight.svg" alt="" />
+                                        <img src="assets/svg/icon/article/StartLight.svg" alt="" />
+                                    </span>
+                                    <span class="text-view">123 Người xem</span>
+                                </div>
+                            </div>
+                            <h4>Take off to Tokyo sale Sakura show</h4>
+                            <ul class="infor">
+                                <li>
+                                    <div class="icon-infor-event">
+                                        <img src="assets/svg/icon/article/map.svg" alt="" />
+                                    </div>
+                                    <span> Hạ Long, Quảng Ninh </span>
+                                </li>
+                                <li>
+                                    <div class="icon-infor-event">
+                                        <img src="assets/svg/icon/article/Calendar_duotone.svg" alt="" />
+                                    </div>
+                                    <span> T3, 17/11</span>
+                                </li>
+                                <li>
+                                    <div class="icon-infor-event">
+                                        <img src="assets/svg/icon/article/time.svg" alt="" />
+                                    </div>
+                                    <span> 04:30 - 16:30</span>
+                                </li>
+                            </ul>
+                            <div class="detail d-flex justify-content-between">
+                                <a href="#" class="bg-info">Chi tiết</a>
+                                <div class="price">
+                                    <p class="price-main">35,000,000đ</p>
+                                    <del class="price-del text-info">35,000,000đ</del>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="article-event">
+                        <div class="img">
+                            <img src="assets/image/8d0523c61dff6a85f0a4488c7889d08a.jpg" class="thumail-Id6 thumail"
+                                alt="" />
+                            <img src="assets/svg/icon/article/loveChecked.svg" alt="" class="icon-love" />
+                            <span class="sale bg-danger">-15%</span>
+                            <span class="date">Hết hạn sau: 34 ngày 12:08:17</span>
+                        </div>
+                        <div class="article-event-content p-14">
+                            <div class="d-flex justify-content-between">
+                                <p class="category bg-success">Thể thao</p>
+                                <div class="view">
+                                    <span class="d-flex">
+                                        <img src="assets/svg/icon/article/StartLight.svg" alt="" />
+                                        <img src="assets/svg/icon/article/StartLight.svg" alt="" />
+                                        <img src="assets/svg/icon/article/StartLight.svg" alt="" />
+                                        <img src="assets/svg/icon/article/StartLight.svg" alt="" />
+                                        <img src="assets/svg/icon/article/StartLight.svg" alt="" />
+                                    </span>
+                                    <span class="text-view">123 Người xem</span>
+                                </div>
+                            </div>
+                            <h4>Lễ hội thiết kế sáng tạo Hà Nội năm 2024</h4>
+                            <ul class="infor">
+                                <li>
+                                    <div class="icon-infor-event">
+                                        <img src="assets/svg/icon/article/map.svg" alt="" />
+                                    </div>
+                                    <span> Thành phố Hà Nội </span>
+                                </li>
+                                <li>
+                                    <div class="icon-infor-event">
+                                        <img src="assets/svg/icon/article/Calendar_duotone.svg" alt="" />
+                                    </div>
+                                    <span> T3, 17/11</span>
+                                </li>
+                                <li>
+                                    <div class="icon-infor-event">
+                                        <img src="assets/svg/icon/article/time.svg" alt="" />
+                                    </div>
+                                    <span> 04:30 - 16:30</span>
+                                </li>
+                            </ul>
+                            <div class="detail d-flex justify-content-between">
+                                <a href="#" class="bg-info">Chi tiết</a>
+                                <div class="price">
+                                    <p class="price-main">35,000,000đ</p>
+                                    <del class="price-del text-info">35,000,000đ</del>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="article-event">
+                        <div class="img">
+                            <img src="assets/image/8d0523c61dff6a85f0a4488c7889d08a.jpg" class="thumail-Id6 thumail"
+                                alt="" />
+                            <img src="assets/svg/icon/article/loveChecked.svg" alt="" class="icon-love" />
+                            <span class="sale bg-danger">-15%</span>
+                            <span class="date">Hết hạn sau: 34 ngày 12:08:17</span>
+                        </div>
+                        <div class="article-event-content p-14">
+                            <div class="d-flex justify-content-between">
+                                <p class="category bg-success">Thể thao</p>
+                                <div class="view">
+                                    <span class="d-flex">
+                                        <img src="assets/svg/icon/article/StartLight.svg" alt="" />
+                                        <img src="assets/svg/icon/article/StartLight.svg" alt="" />
+                                        <img src="assets/svg/icon/article/StartLight.svg" alt="" />
+                                        <img src="assets/svg/icon/article/StartLight.svg" alt="" />
+                                        <img src="assets/svg/icon/article/StartLight.svg" alt="" />
+                                    </span>
+                                    <span class="text-view">123 Người xem</span>
+                                </div>
+                            </div>
+                            <h4>Lễ hội thiết kế sáng tạo Hà Nội năm 2024</h4>
+                            <ul class="infor">
+                                <li>
+                                    <div class="icon-infor-event">
+                                        <img src="assets/svg/icon/article/map.svg" alt="" />
+                                    </div>
+                                    <span> Thành phố Hà Nội </span>
+                                </li>
+                                <li>
+                                    <div class="icon-infor-event">
+                                        <img src="assets/svg/icon/article/Calendar_duotone.svg" alt="" />
+                                    </div>
+                                    <span> T3, 17/11</span>
+                                </li>
+                                <li>
+                                    <div class="icon-infor-event">
+                                        <img src="assets/svg/icon/article/time.svg" alt="" />
+                                    </div>
+                                    <span> 04:30 - 16:30</span>
+                                </li>
+                            </ul>
+                            <div class="detail d-flex justify-content-between">
+                                <a href="#" class="bg-info">Chi tiết</a>
+                                <div class="price">
+                                    <p class="price-main">35,000,000đ</p>
+                                    <del class="price-del text-info">35,000,000đ</del>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="article-event">
+                        <div class="img">
+                            <img src="assets/image/8d0523c61dff6a85f0a4488c7889d08a.jpg" class="thumail-Id6 thumail"
+                                alt="" />
+                            <img src="assets/svg/icon/article/loveChecked.svg" alt="" class="icon-love" />
+                            <span class="sale bg-danger">-15%</span>
+                            <span class="date">Hết hạn sau: 34 ngày 12:08:17</span>
+                        </div>
+                        <div class="article-event-content p-14">
+                            <div class="d-flex justify-content-between">
+                                <p class="category bg-success">Thể thao</p>
+                                <div class="view">
+                                    <span class="d-flex">
+                                        <img src="assets/svg/icon/article/StartLight.svg" alt="" />
+                                        <img src="assets/svg/icon/article/StartLight.svg" alt="" />
+                                        <img src="assets/svg/icon/article/StartLight.svg" alt="" />
+                                        <img src="assets/svg/icon/article/StartLight.svg" alt="" />
+                                        <img src="assets/svg/icon/article/StartLight.svg" alt="" />
+                                    </span>
+                                    <span class="text-view">123 Người xem</span>
+                                </div>
+                            </div>
+                            <h4>Lễ hội thiết kế sáng tạo Hà Nội năm 2024</h4>
+                            <ul class="infor">
+                                <li>
+                                    <div class="icon-infor-event">
+                                        <img src="assets/svg/icon/article/map.svg" alt="" />
+                                    </div>
+                                    <span> Thành phố Hà Nội </span>
+                                </li>
+                                <li>
+                                    <div class="icon-infor-event">
+                                        <img src="assets/svg/icon/article/Calendar_duotone.svg" alt="" />
+                                    </div>
+                                    <span> T3, 17/11</span>
+                                </li>
+                                <li>
+                                    <div class="icon-infor-event">
+                                        <img src="assets/svg/icon/article/time.svg" alt="" />
+                                    </div>
+                                    <span> 04:30 - 16:30</span>
+                                </li>
+                            </ul>
+                            <div class="detail d-flex justify-content-between">
+                                <a href="#" class="bg-info">Chi tiết</a>
+                                <div class="price">
+                                    <p class="price-main">35,000,000đ</p>
+                                    <del class="price-del text-info">35,000,000đ</del>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="section-event-new p-14">
+                <div class="h-section d-flex justify-content-between">
+                    <h3>Sự kiện mới nhất</h3>
+                    <a href="#">Xem thêm &#8250;</a>
+                </div>
+                <div class="tag">
+                    <ul class="d-flex">
+                        <li>
+                            <input type="checkbox" id="event1" />
+                            <label for="event1"> <span> Sự kiện 1</span></label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="event2" />
+                            <label for="event2"> <span> Sự kiện 2</span></label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="event3" />
+                            <label for="event3"> <span> Sự kiện 3</span></label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="event4" />
+                            <label for="event4"> <span> Sự kiện 4</span></label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="event5" />
+                            <label for="event5"> <span> Sự kiện 5</span></label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="all-item d-flex">
+                    <article class="article-event-new">
+                        <div class="img">
+                            <img src="assets/image/6a69652fe24b0a41727d270e40eed985.jpg" class="thumail-Id6 thumail"
+                                alt="" />
+                        </div>
+                        <div class="article-event-new-content p-14">
+                            <h4>Combo 2 Vé Người Lớn & Voucher Ẩm Thực</h4>
+                            <ul class="infor">
+                                <li>
+                                    <span> Vinwonder Phú Quốc </span>
+                                </li>
+                                <li>
+                                    <span> Thứ 3, 20/10 - Thứ 5, 22/10 </span>
+                                </li>
+                            </ul>
+                            <div class="detail d-flex justify-content-between">
+                                <div class="price">
+                                    <del class="price-del">2,000,000 VND</del>
+                                    <p class="price-main text-danger">1,940,000 VND</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="article-event-new">
+                        <div class="img">
+                            <img src="assets/image/ccf91dc93e9a2b7eb6efcb812ebfa5b6.jpg" class="thumail-Id6 thumail"
+                                alt="" />
+                        </div>
+                        <div class="article-event-new-content p-14">
+                            <h4>Mở bán VÉ NĂM Sun World Ha Long 2024</h4>
+                            <ul class="infor">
+                                <li>
+                                    <span>Sun World Ha Long 2024</span>
+                                </li>
+                                <li>
+                                    <span> Thứ 3, 20/10 - Thứ 5, 22/10 </span>
+                                </li>
+                            </ul>
+                            <div class="detail d-flex justify-content-between">
+                                <div class="price">
+                                    <del class="price-del">2,000,000 VND</del>
+                                    <p class="price-main text-danger">1,940,000 VND</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="article-event-new">
+                        <div class="img">
+                            <img src="assets/image/ccf91dc93e9a2b7eb6efcb812ebfa5b6.jpg" class="thumail-Id6 thumail"
+                                alt="" />
+                        </div>
+                        <div class="article-event-new-content p-14">
+                            <h4>Mở bán VÉ NĂM Sun World Ha Long 2024</h4>
+                            <ul class="infor">
+                                <li>
+                                    <span>Sun World Ha Long 2024</span>
+                                </li>
+                                <li>
+                                    <span> Thứ 3, 20/10 - Thứ 5, 22/10 </span>
+                                </li>
+                            </ul>
+                            <div class="detail d-flex justify-content-between">
+                                <div class="price">
+                                    <del class="price-del">2,000,000 VND</del>
+                                    <p class="price-main text-danger">1,940,000 VND</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="section-discount-sale p-14 bg-info-transparent">
+                <div class="h-section d-flex justify-content-between">
+                    <h3>Mở bán giá ưu đãi</h3>
+                    <a href="#">Xem thêm &#8250;</a>
+                </div>
+                <div class="all-item d-flex">
+                    <div class="colum">
+                        <article class="article-discount-sale d-flex">
+                            <div class="img">
+                                <img src="assets/image/27bcc334fde78340366b71b26447d514.jpg" class="thumail-Id2 thumail"
+                                    alt="" />
+                                <img src="assets/svg/icon/article/loveChecked.svg" alt="" class="icon-love" />
+                            </div>
+                            <div class="article-discount-sale-content p-14">
+                                <div class="d-flex justify-content-between">
+                                    <p class="time">Hết hạn sau: 34 ngày 12:08:17</p>
+                                </div>
+                                <h4>Lễ hội thiết kế sáng tạo Hà Nội năm 2024</h4>
+                                <ul class="infor">
+                                    <li>
+                                        <div class="icon-infor-discount-sale">
+                                            <img src="assets/svg/icon/article/map.svg" alt="" />
+                                        </div>
+                                        <span>Hà Nội</span>
+                                    </li>
+                                    <li>
+                                        <div class="icon-infor-discount-sale">
+                                            <img src="assets/svg/icon/article/Calendar_duotone.svg" alt="" />
+                                        </div>
+                                        <span> T3, 20/10 - T5, 22/10</span>
+                                    </li>
+                                    <li>
+                                        <div class="icon-infor-discount-sale">
+                                            <img src="assets/svg/icon/article/time.svg" alt="" />
+                                        </div>
+                                        <span>18:30 - 23:30</span>
+                                    </li>
+                                </ul>
+                                <div class="detail d-flex justify-content-between">
+                                    <a href="#" class="text-danger">-35%</a>
+                                    <p class="price-main">90,000 VND</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="article-discount-sale d-flex">
+                            <div class="img">
+                                <img src="assets/image/8fefe654532418acb8a45368ff6c16b4.jpg" class="thumail-Id2 thumail"
+                                    alt="" />
+                                <img src="assets/svg/icon/article/loveChecked.svg" alt="" class="icon-love" />
+                            </div>
+                            <div class="article-discount-sale-content p-14">
+                                <div class="d-flex justify-content-between">
+                                    <p class="time">Hết hạn sau: 34 ngày 12:08:17</p>
+                                </div>
+                                <h4>Giải chạy Marathon Quốc tế Di sản Hạ Long 2024</h4>
+                                <ul class="infor">
+                                    <li>
+                                        <div class="icon-infor-discount-sale">
+                                            <img src="assets/svg/icon/article/map.svg" alt="" />
+                                        </div>
+                                        <span> Hạ Long, Quảng Ninh </span>
+                                    </li>
+                                    <li>
+                                        <div class="icon-infor-discount-sale">
+                                            <img src="assets/svg/icon/article/Calendar_duotone.svg" alt="" />
+                                        </div>
+                                        <span> T3, 17/11</span>
+                                    </li>
+                                    <li>
+                                        <div class="icon-infor-discount-sale">
+                                            <img src="assets/svg/icon/article/time.svg" alt="" />
+                                        </div>
+                                        <span> 04:30 - 16:30</span>
+                                    </li>
+                                </ul>
+                                <div class="detail d-flex justify-content-between">
+                                    <a href="#" class="text-danger">-35%</a>
+                                    <p class="price-main">35,000,000đ</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="article-discount-sale d-flex">
+                            <div class="img">
+                                <img src="assets/image/3efd42b7ec97985637ca87fe1db9644c.jpg" class="thumail-Id2 thumail"
+                                    alt="" />
+                                <img src="assets/svg/icon/article/loveChecked.svg" alt="" class="icon-love" />
+                            </div>
+                            <div class="article-discount-sale-content p-14">
+                                <div class="d-flex justify-content-between">
+                                    <p class="time">Hết hạn sau: 34 ngày 12:08:17</p>
+                                </div>
+                                <h4>Chương trình ưu đãi đến Bà Nà cho học sinh</h4>
+                                <ul class="infor">
+                                    <li>
+                                        <div class="icon-infor-discount-sale">
+                                            <img src="assets/svg/icon/article/map.svg" alt="" />
+                                        </div>
+                                        <span> Hạ Long, Quảng Ninh </span>
+                                    </li>
+                                    <li>
+                                        <div class="icon-infor-discount-sale">
+                                            <img src="assets/svg/icon/article/Calendar_duotone.svg" alt="" />
+                                        </div>
+                                        <span> T3, 17/11</span>
+                                    </li>
+                                    <li>
+                                        <div class="icon-infor-discount-sale">
+                                            <img src="assets/svg/icon/article/time.svg" alt="" />
+                                        </div>
+                                        <span> 04:30 - 16:30</span>
+                                    </li>
+                                </ul>
+                                <div class="detail d-flex justify-content-between">
+                                    <a href="#" class="text-danger">-35%</a>
+                                    <p class="price-main">35,000,000đ</p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="colum">
+                        <article class="article-discount-sale d-flex">
+                            <div class="img">
+                                <img src="assets/image/27bcc334fde78340366b71b26447d514.jpg" class="thumail-Id2 thumail"
+                                    alt="" />
+                                <img src="assets/svg/icon/article/loveChecked.svg" alt="" class="icon-love" />
+                            </div>
+                            <div class="article-discount-sale-content p-14">
+                                <div class="d-flex justify-content-between">
+                                    <p class="time">Hết hạn sau: 34 ngày 12:08:17</p>
+                                </div>
+                                <h4>Lễ hội thiết kế sáng tạo Hà Nội năm 2024</h4>
+                                <ul class="infor">
+                                    <li>
+                                        <div class="icon-infor-discount-sale">
+                                            <img src="assets/svg/icon/article/map.svg" alt="" />
+                                        </div>
+                                        <span>Hà Nội</span>
+                                    </li>
+                                    <li>
+                                        <div class="icon-infor-discount-sale">
+                                            <img src="assets/svg/icon/article/Calendar_duotone.svg" alt="" />
+                                        </div>
+                                        <span> T3, 20/10 - T5, 22/10</span>
+                                    </li>
+                                    <li>
+                                        <div class="icon-infor-discount-sale">
+                                            <img src="assets/svg/icon/article/time.svg" alt="" />
+                                        </div>
+                                        <span>18:30 - 23:30</span>
+                                    </li>
+                                </ul>
+                                <div class="detail d-flex justify-content-between">
+                                    <a href="#" class="text-danger">-35%</a>
+                                    <p class="price-main">90,000 VND</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="article-discount-sale d-flex">
+                            <div class="img">
+                                <img src="assets/image/8fefe654532418acb8a45368ff6c16b4.jpg" class="thumail-Id2 thumail"
+                                    alt="" />
+                                <img src="assets/svg/icon/article/loveChecked.svg" alt="" class="icon-love" />
+                            </div>
+                            <div class="article-discount-sale-content p-14">
+                                <div class="d-flex justify-content-between">
+                                    <p class="time">Hết hạn sau: 34 ngày 12:08:17</p>
+                                </div>
+                                <h4>Giải chạy Marathon Quốc tế Di sản Hạ Long 2024</h4>
+                                <ul class="infor">
+                                    <li>
+                                        <div class="icon-infor-discount-sale">
+                                            <img src="assets/svg/icon/article/map.svg" alt="" />
+                                        </div>
+                                        <span> Hạ Long, Quảng Ninh </span>
+                                    </li>
+                                    <li>
+                                        <div class="icon-infor-discount-sale">
+                                            <img src="assets/svg/icon/article/Calendar_duotone.svg" alt="" />
+                                        </div>
+                                        <span> T3, 17/11</span>
+                                    </li>
+                                    <li>
+                                        <div class="icon-infor-discount-sale">
+                                            <img src="assets/svg/icon/article/time.svg" alt="" />
+                                        </div>
+                                        <span> 04:30 - 16:30</span>
+                                    </li>
+                                </ul>
+                                <div class="detail d-flex justify-content-between">
+                                    <a href="#" class="text-danger">-35%</a>
+                                    <p class="price-main">35,000,000đ</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="article-discount-sale d-flex">
+                            <div class="img">
+                                <img src="assets/image/3efd42b7ec97985637ca87fe1db9644c.jpg" class="thumail-Id2 thumail"
+                                    alt="" />
+                                <img src="assets/svg/icon/article/loveChecked.svg" alt="" class="icon-love" />
+                            </div>
+                            <div class="article-discount-sale-content p-14">
+                                <div class="d-flex justify-content-between">
+                                    <p class="time">Hết hạn sau: 34 ngày 12:08:17</p>
+                                </div>
+                                <h4>Chương trình ưu đãi đến Bà Nà cho học sinh</h4>
+                                <ul class="infor">
+                                    <li>
+                                        <div class="icon-infor-discount-sale">
+                                            <img src="assets/svg/icon/article/map.svg" alt="" />
+                                        </div>
+                                        <span> Hạ Long, Quảng Ninh </span>
+                                    </li>
+                                    <li>
+                                        <div class="icon-infor-discount-sale">
+                                            <img src="assets/svg/icon/article/Calendar_duotone.svg" alt="" />
+                                        </div>
+                                        <span> T3, 17/11</span>
+                                    </li>
+                                    <li>
+                                        <div class="icon-infor-discount-sale">
+                                            <img src="assets/svg/icon/article/time.svg" alt="" />
+                                        </div>
+                                        <span> 04:30 - 16:30</span>
+                                    </li>
+                                </ul>
+                                <div class="detail d-flex justify-content-between">
+                                    <a href="#" class="text-danger">-35%</a>
+                                    <p class="price-main">35,000,000đ</p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="colum">
+                        <article class="article-discount-sale d-flex">
+                            <div class="img">
+                                <img src="assets/image/27bcc334fde78340366b71b26447d514.jpg" class="thumail-Id2 thumail"
+                                    alt="" />
+                                <img src="assets/svg/icon/article/loveChecked.svg" alt="" class="icon-love" />
+                            </div>
+                            <div class="article-discount-sale-content p-14">
+                                <div class="d-flex justify-content-between">
+                                    <p class="time">Hết hạn sau: 34 ngày 12:08:17</p>
+                                </div>
+                                <h4>Lễ hội thiết kế sáng tạo Hà Nội năm 2024</h4>
+                                <ul class="infor">
+                                    <li>
+                                        <div class="icon-infor-discount-sale">
+                                            <img src="assets/svg/icon/article/map.svg" alt="" />
+                                        </div>
+                                        <span>Hà Nội</span>
+                                    </li>
+                                    <li>
+                                        <div class="icon-infor-discount-sale">
+                                            <img src="assets/svg/icon/article/Calendar_duotone.svg" alt="" />
+                                        </div>
+                                        <span> T3, 20/10 - T5, 22/10</span>
+                                    </li>
+                                    <li>
+                                        <div class="icon-infor-discount-sale">
+                                            <img src="assets/svg/icon/article/time.svg" alt="" />
+                                        </div>
+                                        <span>18:30 - 23:30</span>
+                                    </li>
+                                </ul>
+                                <div class="detail d-flex justify-content-between">
+                                    <a href="#" class="text-danger">-35%</a>
+                                    <p class="price-main">90,000 VND</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="article-discount-sale d-flex">
+                            <div class="img">
+                                <img src="assets/image/8fefe654532418acb8a45368ff6c16b4.jpg" class="thumail-Id2 thumail"
+                                    alt="" />
+                                <img src="assets/svg/icon/article/loveChecked.svg" alt="" class="icon-love" />
+                            </div>
+                            <div class="article-discount-sale-content p-14">
+                                <div class="d-flex justify-content-between">
+                                    <p class="time">Hết hạn sau: 34 ngày 12:08:17</p>
+                                </div>
+                                <h4>Giải chạy Marathon Quốc tế Di sản Hạ Long 2024</h4>
+                                <ul class="infor">
+                                    <li>
+                                        <div class="icon-infor-discount-sale">
+                                            <img src="assets/svg/icon/article/map.svg" alt="" />
+                                        </div>
+                                        <span> Hạ Long, Quảng Ninh </span>
+                                    </li>
+                                    <li>
+                                        <div class="icon-infor-discount-sale">
+                                            <img src="assets/svg/icon/article/Calendar_duotone.svg" alt="" />
+                                        </div>
+                                        <span> T3, 17/11</span>
+                                    </li>
+                                    <li>
+                                        <div class="icon-infor-discount-sale">
+                                            <img src="assets/svg/icon/article/time.svg" alt="" />
+                                        </div>
+                                        <span> 04:30 - 16:30</span>
+                                    </li>
+                                </ul>
+                                <div class="detail d-flex justify-content-between">
+                                    <a href="#" class="text-danger">-35%</a>
+                                    <p class="price-main">35,000,000đ</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="article-discount-sale d-flex">
+                            <div class="img">
+                                <img src="assets/image/3efd42b7ec97985637ca87fe1db9644c.jpg" class="thumail-Id2 thumail"
+                                    alt="" />
+                                <img src="assets/svg/icon/article/loveChecked.svg" alt="" class="icon-love" />
+                            </div>
+                            <div class="article-discount-sale-content p-14">
+                                <div class="d-flex justify-content-between">
+                                    <p class="time">Hết hạn sau: 34 ngày 12:08:17</p>
+                                </div>
+                                <h4>Chương trình ưu đãi đến Bà Nà cho học sinh</h4>
+                                <ul class="infor">
+                                    <li>
+                                        <div class="icon-infor-discount-sale">
+                                            <img src="assets/svg/icon/article/map.svg" alt="" />
+                                        </div>
+                                        <span> Hạ Long, Quảng Ninh </span>
+                                    </li>
+                                    <li>
+                                        <div class="icon-infor-discount-sale">
+                                            <img src="assets/svg/icon/article/Calendar_duotone.svg" alt="" />
+                                        </div>
+                                        <span> T3, 17/11</span>
+                                    </li>
+                                    <li>
+                                        <div class="icon-infor-discount-sale">
+                                            <img src="assets/svg/icon/article/time.svg" alt="" />
+                                        </div>
+                                        <span> 04:30 - 16:30</span>
+                                    </li>
+                                </ul>
+                                <div class="detail d-flex justify-content-between">
+                                    <a href="#" class="text-danger">-35%</a>
+                                    <p class="price-main">35,000,000đ</p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="section-envent-near p-14">
+                <div class="h-section d-flex justify-content-between">
+                    <h3>Sự kiện gần bạn</h3>
+                    <a href="#">Xem thêm &#8250;</a>
+                </div>
+                <div class="all-item d-flex justify-content-between p-14">
+                    <article style="width: 100%">
+                        <img src="assets/image/ba983d62e6fbd934ed90132e5bbe62e1.jpg" alt="" class="width-full" />
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="section-introduction bg-info-transparent p-14">
+                <div class="h-section d-flex justify-content-between">
+                    <h3>Clip giới thiệu</h3>
+                    <a href="#">Xem thêm &#8250;</a>
+                </div>
+                <div class="all-item d-flex justify-content-between p-14">
+                    <article>
+                        <iframe class="width-full" width="311" height="265"
+                            src="https://www.youtube.com/embed/ZWQNTKPUKVI"
+                            title="Vở Chèo: TÔ PHÚ VƯỢNG - NGƯỜI CHẾ TÁC NGAI VÀNG | Đoàn Chèo Hải Phòng"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </article>
+                    <article class="">
+                        <iframe class="width-full" width="311" height="265"
+                            src="https://www.youtube.com/embed/ZWQNTKPUKVI"
+                            title="Vở Chèo: TÔ PHÚ VƯỢNG - NGƯỜI CHẾ TÁC NGAI VÀNG | Đoàn Chèo Hải Phòng"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </article>
+                    <article class="">
+                        <iframe class="width-full" width="311" height="265"
+                            src="https://www.youtube.com/embed/ZWQNTKPUKVI"
+                            title="Vở Chèo: TÔ PHÚ VƯỢNG - NGƯỜI CHẾ TÁC NGAI VÀNG | Đoàn Chèo Hải Phòng"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="section-event-new p-14">
+                <div class="h-section d-flex justify-content-between">
+                    <h3>Khám phá</h3>
+                    <a href="#">Xem thêm &#8250;</a>
+                </div>
+                <div class="all-item d-flex">
+                    <article class="article-event-new">
+                        <div class="img">
+                            <img src="assets/image/27bcc334fde78340366b71b26447d514.jpg" class="thumail-Id6 thumail"
+                                alt="" />
+                        </div>
+                        <div class="article-event-new-content p-14">
+                            <span class="category bg-danger">123</span>
+                            <h4 style="margin-top: 10px">
+                                Take off to Tokyo sale Sakura show
+                            </h4>
+                            <ul class="infor">
+                                <li>
+                                    <div class="icon-infor-event">
+                                        <img src="assets/svg/icon/article/Calendar_duotone.svg" alt="" />
+                                    </div>
+                                    <span> T3, 17/11</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="article-event-new">
+                        <div class="img">
+                            <img src="assets/image/27bcc334fde78340366b71b26447d514.jpg" class="thumail-Id6 thumail"
+                                alt="" />
+                        </div>
+                        <div class="article-event-new-content p-14">
+                            <span class="category bg-danger">123</span>
+                            <h4 style="margin-top: 10px">
+                                Take off to Tokyo sale Sakura show
+                            </h4>
+                            <ul class="infor">
+                                <li>
+                                    <div class="icon-infor-event">
+                                        <img src="assets/svg/icon/article/Calendar_duotone.svg" alt="" />
+                                    </div>
+                                    <span> T3, 17/11</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="section-event-new p-14 bg-info-transparent">
+                <div class="h-section d-flex justify-content-between">
+                    <h3>Được yêu thích nhất</h3>
+                    <a href="#">Xem thêm &#8250;</a>
+                </div>
+                <div class="all-item d-flex">
+                    <article class="article-event-new">
+                        <div class="img">
+                            <img src="assets/image/27bcc334fde78340366b71b26447d514.jpg" class="thumail-Id6 thumail"
+                                alt="" />
+                        </div>
+                        <div class="article-event-new-content p-14">
+                            <span class="category bg-danger">123</span>
+                            <h4 style="margin-top: 10px">
+                                Take off to Tokyo sale Sakura show
+                            </h4>
+                            <ul class="infor">
+                                <li>
+                                    <div class="icon-infor-event">
+                                        <img src="assets/svg/icon/article/Calendar_duotone.svg" alt="" />
+                                    </div>
+                                    <span> T3, 17/11</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="article-event-new">
+                        <div class="img">
+                            <img src="assets/image/27bcc334fde78340366b71b26447d514.jpg" class="thumail-Id6 thumail"
+                                alt="" />
+                        </div>
+                        <div class="article-event-new-content p-14">
+                            <span class="category bg-danger">123</span>
+                            <h4 style="margin-top: 10px">
+                                Take off to Tokyo sale Sakura show
+                            </h4>
+                            <ul class="infor">
+                                <li>
+                                    <div class="icon-infor-event">
+                                        <img src="assets/svg/icon/article/Calendar_duotone.svg" alt="" />
+                                    </div>
+                                    <span> T3, 17/11</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="article-event-new">
+                        <div class="img">
+                            <img src="assets/image/27bcc334fde78340366b71b26447d514.jpg" class="thumail-Id6 thumail"
+                                alt="" />
+                        </div>
+                        <div class="article-event-new-content p-14">
+                            <span class="category bg-danger">123</span>
+                            <h4 style="margin-top: 10px">
+                                Take off to Tokyo sale Sakura show
+                            </h4>
+                            <ul class="infor">
+                                <li>
+                                    <div class="icon-infor-event">
+                                        <img src="assets/svg/icon/article/Calendar_duotone.svg" alt="" />
+                                    </div>
+                                    <span> T3, 17/11</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="section-event-new p-14">
+                <div class="h-section d-flex justify-content-between">
+                    <h3>Phù hợp với trẻ em</h3>
+                    <a href="#">Xem thêm &#8250;</a>
+                </div>
+                <div class="all-item d-flex">
+                    <article class="article-event-new">
+                        <div class="img">
+                            <img src="assets/image/27bcc334fde78340366b71b26447d514.jpg" class="thumail-Id6 thumail"
+                                alt="" />
+                        </div>
+                        <div class="article-event-new-content p-14">
+                            <span class="category bg-danger">123</span>
+                            <h4 style="margin-top: 10px">
+                                Take off to Tokyo sale Sakura show
+                            </h4>
+                            <ul class="infor">
+                                <li>
+                                    <div class="icon-infor-event">
+                                        <img src="assets/svg/icon/article/Calendar_duotone.svg" alt="" />
+                                    </div>
+                                    <span> T3, 17/11</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="article-event-new">
+                        <div class="img">
+                            <img src="assets/image/27bcc334fde78340366b71b26447d514.jpg" class="thumail-Id6 thumail"
+                                alt="" />
+                        </div>
+                        <div class="article-event-new-content p-14">
+                            <span class="category bg-danger">123</span>
+                            <h4 style="margin-top: 10px">
+                                Take off to Tokyo sale Sakura show
+                            </h4>
+                            <ul class="infor">
+                                <li>
+                                    <div class="icon-infor-event">
+                                        <img src="assets/svg/icon/article/Calendar_duotone.svg" alt="" />
+                                    </div>
+                                    <span> T3, 17/11</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="article-event-new">
+                        <div class="img">
+                            <img src="assets/image/27bcc334fde78340366b71b26447d514.jpg" class="thumail-Id6 thumail"
+                                alt="" />
+                        </div>
+                        <div class="article-event-new-content p-14">
+                            <span class="category bg-danger">123</span>
+                            <h4 style="margin-top: 10px">
+                                Take off to Tokyo sale Sakura show
+                            </h4>
+                            <ul class="infor">
+                                <li>
+                                    <div class="icon-infor-event">
+                                        <img src="assets/svg/icon/article/Calendar_duotone.svg" alt="" />
+                                    </div>
+                                    <span> T3, 17/11</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
