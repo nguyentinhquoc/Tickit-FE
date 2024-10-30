@@ -84,4 +84,16 @@ $(document).ready(function () {
   $(".icon-seemore .see").on("click", function () {
     $(this).closest(".text-container").find(".text-none").slideToggle(300);
   });
+  // an hien
+
+  $(".select-infor").on("click", function () {
+    var targetClass = $(this).data("target");
+    console.log(targetClass);
+    $(".select-infor").removeClass("active-infor");
+    $(this).addClass("active-infor");
+
+    $(".content > div").hide();
+
+    $("." + targetClass).show();
+  });
 });

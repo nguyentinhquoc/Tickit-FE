@@ -211,3 +211,30 @@ h3 {
 .map-img > img {
   width: 100%;
 }
+/* Sua them vao  */
+.select-infor {
+  flex: 1 1 0;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  color: var(--secondary-color);
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+}
+.select-infor:nth-child(1) {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.select-infor:nth-child(3) {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.active-infor {
+  background-color: var(--danger-color);
+  color: white;
+}
+.danhgia,
+.where {
+  display: none;
+}
