@@ -1,0 +1,253 @@
+.capacity__item {
+  display: inline-block;
+  text-align: center;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.capacity__item p {
+  padding: 5px 10px;
+  border-radius: 16px;
+  border: 1px solid gray;
+}
+
+.capacity__item input:checked + p {
+  background-color: rgba(255, 87, 34, 0.2);
+  border-color: #ff5722;
+  color: #ff5722;
+}
+.capacity,
+.Pay__product {
+  gap: 1rem;
+  padding: 0.6rem;
+  background-color: #fff;
+  margin-top: 1.2rem;
+  border-radius: 7px;
+  border: 1px solid gray;
+}
+.Pay-sanphamcha {
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  background-color: rgba(244, 247, 254, 1);
+}
+.Pay__product > div:first-child {
+  margin-bottom: 15px;
+}
+.Pay__product {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.Pay__product--content {
+  padding: 0.5rem;
+  border: 1px solid grey;
+  border-radius: 15px;
+}
+.Pay__product--number {
+  width: 5em;
+  border: 1px solid grey;
+  border-radius: 15px;
+}
+.Pay__product--number > span:first-child,
+.Pay__product--number > span:last-child {
+  padding: 0.3rem;
+  flex: 1;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+}
+
+#checkbox--Pay {
+  border: 2px solid var(--primary-color);
+  border-radius: 3px;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  position: relative;
+  top: 0.1rem;
+  margin-right: 9px;
+}
+
+input[type="checkbox"]:checked::before {
+  content: "✓"; /* Dấu kiểm */
+  position: absolute;
+  font-weight: bold;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(255, 166, 0);
+  font-size: 12px;
+}
+
+.Pay__product--content div:last-child {
+  width: 13rem;
+  display: block;
+  line-height: 25px;
+  /* background-color: #555; */
+}
+.Ship {
+  background-color: rgba(244, 247, 254, 1);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+#checkbox--Ship {
+  border: 2px solid rgba(25, 207, 162, 1);
+  border-radius: 3px;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  position: relative;
+  top: 0.1rem;
+  margin-right: 9px;
+  background-color: rgba(25, 207, 162, 1);
+}
+/* #checkbox--Ship input[type="checkbox"]:checked::before {
+  background-color: rgba(25, 207, 162, 1);
+} */
+
+.adderss_ship input {
+  width: 100%;
+  padding: 0.7rem;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid #eee;
+}
+
+.adderss_ship {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.Ship {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.freeShip {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  border: 1px solid grey;
+  border-radius: 15px;
+  width: fit-content;
+  background-color: #fff;
+}
+
+.adderss_ship > label {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.price__ship span:first-child {
+  font-size: 12px;
+  color: rgba(39, 59, 74, 1);
+}
+.price__ship span:last-child {
+  font-size: 12px;
+  color: rgba(252, 101, 70, 1);
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 700;
+}
+p {
+  font-size: 14px;
+}
+
+.kc {
+  width: 100%;
+  height: 7px;
+  background-color: #fff;
+}
+.information__none div {
+  margin: 13px 0;
+  color: rgba(0, 51, 78, 1);
+}
+.information__none div:last-child p:last-child {
+  text-decoration: line-through;
+}
+.information__none div:last-child {
+  color: rgba(252, 101, 70, 1);
+}
+.information__none {
+  display: none;
+}
+
+.Price_thanhtoan {
+  background-color: rgba(244, 247, 254, 1);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.information__price {
+  background-color: #fff;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border: 1px solid grey;
+  border-radius: 15px;
+}
+
+.seemore__price {
+  cursor: pointer;
+  gap: 8px;
+  margin-top: 5px;
+}
+
+.price-tong {
+  color: rgba(0, 51, 78, 1);
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.btn-muangay,
+.btn-cart {
+  padding: 10px 15px;
+  border-radius: 10px;
+  color: white;
+}
+.btn-cart {
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.div__thanhtona {
+  margin-top: 1rem;
+  margin-bottom: 6rem;
+}
+
+.Sale {
+  background-color: var(--danger-color);
+}
+
+.Sale > h2 {
+  color: white;
+  font-size: 16px;
+}
+
+.Sale > div {
+  gap: 10px;
+}
+.sale_icon,
+.Sale span {
+  flex: 1;
+}
+
+.sale__name--time {
+  flex: 2;
+  line-height: 15px;
+  font-size: 10px;
+  font-weight: 500;
+  color: white;
+}
+
+.Sale span {
+  background: var(--secondary-color);
+  padding: 4px 0px;
+  color: white;
+  text-align: center;
+  font-weight: 600;
+  border-radius: 10px;
+  font-size: 16px;
+}

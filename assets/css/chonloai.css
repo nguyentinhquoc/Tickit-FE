@@ -1,0 +1,327 @@
+/* chon hang loai  */
+
+.date__items {
+  background-color: #fff;
+  border: 1px solid rgba(210, 210, 214, 1);
+  border-radius: 15px;
+  padding-top: 1.5rem;
+}
+
+.date__title--content {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+}
+
+.date__datetime--item--content {
+  font-size: 12px;
+  flex: 4;
+  display: flex;
+  align-items: end;
+  line-height: 16px;
+}
+
+.date__datetime--item--icon {
+  flex: 1;
+  margin-right: 10px;
+  display: flex;
+  align-items: start;
+}
+
+.date__datetime--item--icon > img {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.date__price > div div:first-child {
+  font-size: 14px;
+  text-decoration: line-through;
+  color: rgba(145, 155, 164, 1);
+  line-height: 25px;
+}
+.date__price > div div:last-child {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 25px;
+  color: rgba(0, 51, 78, 1);
+}
+.date__price span {
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  padding: 0.6rem 1rem;
+  border-radius: 10px;
+  background-color: var(--danger-color);
+}
+.date__title--icon > img {
+  width: 1.3rem;
+  object-fit: cover;
+}
+
+.select__chon {
+  background-color: var(--success-color) !important;
+}
+.category__seemore {
+  cursor: pointer;
+  font-size: 14px;
+  color: rgba(56, 101, 224, 1);
+}
+
+.category__seemore > span img {
+  margin-left: 10px;
+}
+
+.date__sum--price > div > div:last-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  font-weight: 600;
+  font-size: 16px;
+  background-color: var(--danger-color);
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+.end {
+  margin-bottom: 4rem;
+}
+
+.date__sum--price > div > div:first-child > div {
+  font-size: 16px;
+  font-weight: 600;
+  color: rgba(0, 51, 78, 1);
+  border-bottom: 2px dashed gray;
+  padding: 10px 0;
+}
+
+.date__sum--price {
+  background-color: rgba(244, 247, 254, 1);
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.date__sum--price > div {
+  background-color: #fff;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  border: 1px solid rgb(239, 239, 239);
+  border-radius: 15px;
+}
+/*  */
+.ticket-container {
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px;
+  border: 1px solid rgb(239, 239, 239);
+  width: 100%;
+  display: block;
+}
+
+.ticket-container > h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: rgba(51, 54, 63, 1);
+  margin-bottom: 1rem;
+}
+
+.ticket-item {
+  padding: 8px 20px;
+  border: 1px solid rgba(126, 134, 158, 0.25);
+  font-size: 14px;
+}
+.ticket-item > label {
+  flex: 3;
+}
+
+.ticket-item > div {
+  margin-left: 5px;
+  flex: 5;
+}
+.ticket-item > div > div:first-child {
+  flex: 3;
+}
+.ticket-item > div > div:last-child {
+  flex: 2;
+}
+
+.nguoilon {
+  width: 3rem;
+}
+
+.ticket-controls {
+  gap: 10px;
+  margin-left: 10px;
+}
+
+.ticket-controls > div {
+  cursor: pointer;
+  width: 1.3rem;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  height: 1.3rem;
+
+  background-color: #c9c9c9;
+}
+
+.date__info--list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.ticket-content {
+  font-size: 14px;
+  color: rgba(51, 54, 63, 1);
+  line-height: 20px;
+  margin-bottom: 1rem;
+}
+
+.ticket-price > div:last-child {
+  font-weight: 700;
+  color: rgba(0, 51, 78, 1);
+  line-height: 22px;
+  font-size: 20px;
+}
+.ticket-price > div:first-child {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(145, 155, 164, 1);
+  line-height: 22px;
+  margin-right: 5px;
+  text-decoration: line-through;
+}
+
+.ticket-container small {
+  font-size: 14px;
+  color: rgba(0, 51, 78, 1);
+  margin: 5px 0 1rem 0;
+}
+
+.date__node {
+  font-size: 12px;
+  margin: 0.7rem 0;
+  gap: 1rem;
+}
+
+.date__node > div > span:first-child {
+  margin-right: 5px;
+}
+
+.btn__cart--date {
+  padding: 0.8rem 1rem;
+  border-radius: 10px;
+  border: 1px solid var(--danger-color);
+  color: var(--danger-color);
+  background-color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn__buy--now {
+  padding: 0.8rem 1rem;
+  border-radius: 10px;
+  color: white;
+  background-color: var(--success-color);
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+}
+.hid__date {
+  display: none !important;
+}
+
+/*  */
+
+h2 {
+  font-size: 20px;
+  font-weight: 700;
+}
+.capacity__item {
+  display: inline-block;
+  text-align: center;
+  border-radius: 16px;
+  cursor: pointer;
+  margin-right: 0.9rem;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.capacity__item p {
+  padding: 5px 10px;
+  border-radius: 16px;
+  border: 1px solid gray;
+}
+
+.capacity__item input:checked + p {
+  background-color: rgba(255, 87, 34, 0.2);
+  border-color: #ff5722;
+  color: #ff5722;
+}
+.capacity {
+  padding: 0.6rem;
+  background-color: #fff;
+  margin-top: 1.2rem;
+  border-radius: 7px;
+  border: 1px solid gray;
+}
+
+/*  */
+.kc {
+  width: 100%;
+  height: 7px;
+  background-color: #fff;
+}
+.category__select > div {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.category__select {
+  background-color: rgba(244, 247, 254, 1);
+}
+
+.category__select > h2 {
+  margin-bottom: 1.5rem;
+}
+
+/*  */
+.Sale {
+  background-color: var(--danger-color);
+}
+
+.Sale > h2 {
+  color: white;
+  font-size: 16px;
+}
+
+.Sale > div {
+  gap: 10px;
+}
+.sale_icon,
+.Sale span {
+  flex: 1;
+}
+
+.sale__name--time {
+  flex: 2;
+  line-height: 15px;
+  font-size: 10px;
+  font-weight: 500;
+  color: white;
+}
+
+.Sale span {
+  background: var(--secondary-color);
+  padding: 4px 0px;
+  color: white;
+  text-align: center;
+  font-weight: 600;
+  border-radius: 10px;
+  font-size: 16px;
+}

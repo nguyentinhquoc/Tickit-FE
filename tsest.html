@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/app.css" />
+    <link rel="stylesheet" href="assets/css/lichbieu.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-lunar/1.0.0/moment-lunar.min.js"></script>
+    <title>Lịch biểu</title>
+</head>
+
+<body>
+
+    <!-- Lịch biểu -->
+    <section class="choose__date p-14">
+        <h2>1. Lịch biểu</h2>
+        <p>Hãy chọn ngày phù hợp với bạn</p>
+        <div class="choose__date--items p-14 ">
+            <div class="choose__date--item d-flex justify-content-between align-items-center">
+                <div class="date__icon">
+                    <img src="./assets/svg/icon/lichbieu/Calendar_duotone.svg" alt="">
+                </div>
+                <div class="start__date" id="start-date-text">
+                    <p>Chưa chọn</p>
+                </div>
+                <span>-</span>
+                <div class="end__date" id="end-date-text">
+                    <p>Chưa chọn</p>
+                </div>
+                <div class="icon__semore--date">
+                    <img src="./assets/svg/icon/Icon_detail/Arrow-butom.svg" alt="">
+                </div>
+            </div>
+            <div class="date__none">
+                <div id="calendar"></div>
+                <div class="confim__date">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span id="selected-days">0 ngày đã chọn</span>
+                        <span id="reset" class="btn-delete">Xóa</span>
+                    </div>
+                    <span id="complete" class="btn-suc_date">Hoàn tất</span>
+                </div>
+            </div>
+
+        </div>
+        <div class="date__time p-14 d-flex align-items-center">
+            <div class="price__ship--content d-flex align-items-center">
+                <div class="Pay--conten-check">
+                    <input id="checkbox--Pay" type="checkbox">
+                </div>
+                <p>09:00 am</p>
+            </div>
+            <div class="price__ship--content d-flex align-items-center">
+                <div class="Pay--conten-check">
+                    <input id="checkbox--Pay" type="checkbox">
+                </div>
+                <p>08:00 pm</p>
+            </div>
+        </div>
+    </section>
+    <div class="kc"></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./assets/js/lichbieu.js"></script>
+</body>
+
+</html>

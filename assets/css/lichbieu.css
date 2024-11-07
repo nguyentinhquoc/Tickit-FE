@@ -1,0 +1,556 @@
+.date__ship--content {
+  padding: 0.5rem;
+  border: 1px solid rgba(210, 210, 214, 1);
+  border-radius: 15px;
+}
+
+#checkbox--Pay {
+  border: 2px solid var(--primary-color);
+  border-radius: 3px;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  position: relative;
+  top: 0.1rem;
+  margin-right: 9px;
+}
+
+input[type="checkbox"]:checked::before {
+  content: "✓"; /* Dấu kiểm */
+  position: absolute;
+  font-weight: bold;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(255, 166, 0);
+  font-size: 12px;
+}
+
+.date__ship--content div:last-child {
+  width: 13rem;
+  display: block;
+  line-height: 25px;
+  /* background-color: #555; */
+}
+
+#checkbox--Ship {
+  border: 2px solid rgba(25, 207, 162, 1);
+  border-radius: 3px;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  position: relative;
+  top: 0.1rem;
+  margin-right: 9px;
+  background-color: rgba(25, 207, 162, 1);
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 700;
+}
+p {
+  font-size: 14px;
+}
+
+.kc {
+  width: 100%;
+  height: 7px;
+  background-color: #fff;
+}
+
+.choose__date {
+  cursor: pointer;
+  background-color: rgba(244, 247, 254, 1);
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.choose__date--items,
+.date__time {
+  background-color: #fff;
+  border-radius: 15px;
+  border: 1px solid rgba(210, 210, 214, 1);
+}
+
+/* .choose__date--item {
+  border-bottom: 2px solid var(--primary-color);
+  padding: 10px 0;
+  gap: 10px;
+  font-weight: 700;
+} */
+
+.choose__date--item--click {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0rem;
+  z-index: 999;
+}
+
+.start__date,
+.end__date {
+  flex: 5;
+  text-align: center;
+}
+.date__icon,
+.icon__semore--date {
+  flex: 1;
+  text-align: center;
+}
+
+.choose__date > p {
+  margin: 1.3rem 0;
+  font-size: 14px;
+}
+
+.date__time {
+  margin-top: 1.3rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+/* ==================== */
+.category__select {
+  background-color: rgba(244, 247, 254, 1);
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.category__select > div {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.Sale {
+  background-color: var(--danger-color);
+}
+
+.Sale > h2 {
+  color: white;
+  font-size: 16px;
+}
+
+.Sale > div {
+  gap: 10px;
+}
+.sale_icon,
+.Sale span {
+  flex: 1;
+}
+
+.sale__name--time {
+  flex: 2;
+  line-height: 15px;
+  font-size: 10px;
+  font-weight: 500;
+  color: white;
+}
+
+.Sale span {
+  background: var(--secondary-color);
+  padding: 4px 0px;
+  color: white;
+  text-align: center;
+  font-weight: 600;
+  border-radius: 10px;
+  font-size: 16px;
+}
+.end {
+  margin-bottom: 4rem;
+}
+
+#calendar::-webkit-scrollbar {
+  width: 0px; /* Độ rộng của thanh cuộn dọc */
+}
+
+#calendar::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Màu nền cho track của thanh cuộn */
+  border-radius: 10px; /* Bo tròn các góc */
+}
+
+#calendar::-webkit-scrollbar-thumb {
+  background: #888; /* Màu cho thumb của thanh cuộn */
+  border-radius: 10px; /* Bo tròn các góc */
+}
+
+#calendar::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Màu khi di chuột lên thumb */
+}
+
+#calendar {
+  display: flex;
+  flex-direction: column; /* Sắp xếp các bảng tháng theo chiều dọc */
+  max-height: 50vh; /* Giới hạn chiều cao tối đa của lịch */
+  overflow-y: auto; /* Tạo thanh cuộn dọc */
+  padding: 10px 0;
+}
+
+/* General modal styling */
+#calendar {
+  max-width: 400px;
+  background-color: white;
+  border-radius: 8px;
+  padding: 10px 7px;
+  margin: auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+#calendar h2,
+#calendar h3 {
+  color: #00a651; /* Green color for month/year */
+  text-align: center;
+}
+
+#calendar table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 8px;
+}
+
+#calendar th {
+  padding: 4px;
+  font-weight: normal;
+  text-align: center;
+}
+
+#calendar td {
+  text-align: center;
+  padding: 8px;
+  cursor: pointer;
+  position: relative;
+}
+
+#calendar td:hover {
+  background-color: #f2f2f2;
+  border-radius: 4px;
+}
+
+#calendar td.selected {
+  background-color: #00a651;
+  color: white;
+  border-radius: 4px;
+}
+
+.today {
+  background-color: rgba(202, 202, 200, 0.4); /* Highlight today's date */
+  font-weight: bold;
+}
+
+.past-date {
+  color: #bbb; /* Lighter color for past dates */
+}
+
+.day_new {
+  padding: 7px;
+  font-size: 14px; /* Adjust main day font size if needed */
+  display: block;
+  position: relative;
+}
+
+.day_am {
+  font-size: 10px; /* Set font size for lunar day */
+  position: absolute;
+  bottom: -2%;
+  right: 0;
+  color: #909090; /* Optional: Different color for lunar date */
+}
+
+.month__year {
+  margin: 1rem 0;
+  font-size: 14px;
+  color: rgba(25, 207, 162, 1);
+}
+
+.day {
+  font-size: 14px;
+  font-weight: 700;
+  color: rgba(0, 51, 78, 1);
+}
+
+.saturday > span,
+.saturday,
+.saturday > span > span {
+  color: var(--primary-color);
+}
+.day:last-child {
+  color: var(--primary-color);
+}
+
+.btn-suc_date {
+  width: 100%;
+  padding: 12px 0;
+  text-align: center;
+  background-color: var(--success-color);
+  border-radius: 10px;
+  display: block;
+  color: white;
+}
+
+.confim__date {
+  background-color: #fff;
+  padding: 1.2rem 0 1rem 0;
+  box-shadow: 0 -1px 2px rgba(128, 128, 128, 0.4);
+}
+
+.confim__date > div {
+  margin-bottom: 10px;
+  padding: 0 5px;
+  color: rgba(0, 51, 78, 1);
+}
+
+.current-day {
+  background-color: lightblue; /* Màu nền cho ngày hiện tại */
+}
+
+.selected-range {
+  background-color: lightgreen; /* Màu nền cho các ngày đã chọn */
+}
+.highlight {
+  background-color: lightblue; /* Màu nền cho ngày được chọn */
+}
+.past-date {
+  color: gray; /* Màu xám cho những ngày trong quá khứ */
+  pointer-events: none; /* Không cho phép click vào những ngày này */
+  opacity: 0.5; /* Làm mờ những ngày trong quá khứ */
+}
+.date__none {
+  display: none;
+}
+/* ++++++++++++++++++++++ */
+
+/* chon hang loai  */
+
+.date__items {
+  background-color: #fff;
+  border: 1px solid rgba(210, 210, 214, 1);
+  border-radius: 15px;
+  padding-top: 1.5rem;
+}
+
+.date__title--content {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+}
+
+.date__datetime--item--content {
+  font-size: 12px;
+  display: flex;
+  align-items: end;
+  line-height: 16px;
+}
+
+.date__datetime--item--icon {
+  margin-right: 10px;
+  display: flex;
+  align-items: start;
+}
+
+.date__datetime--item--icon > img {
+  width: 1.1rem;
+  height: 1.1rem;
+}
+
+.date__price > div div:first-child {
+  font-size: 14px;
+  text-decoration: line-through;
+  color: rgba(145, 155, 164, 1);
+  line-height: 25px;
+}
+.date__price > div div:last-child {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 25px;
+  color: rgba(0, 51, 78, 1);
+}
+.date__price span {
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  padding: 0.6rem 1rem;
+  border-radius: 10px;
+  background-color: var(--danger-color);
+}
+.date__title--icon > img {
+  width: 1.3rem;
+  object-fit: cover;
+}
+
+.select__chon {
+  background-color: var(--success-color) !important;
+}
+.category__seemore {
+  cursor: pointer;
+  font-size: 14px;
+  color: rgba(56, 101, 224, 1);
+}
+
+.category__seemore > span img {
+  margin-left: 10px;
+}
+
+.date__sum--price > div > div:last-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  font-weight: 600;
+  font-size: 16px;
+  background-color: var(--danger-color);
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.date__sum--price > div > div:first-child > div {
+  font-size: 16px;
+  font-weight: 600;
+  color: rgba(0, 51, 78, 1);
+  border-bottom: 2px dashed gray;
+  padding: 10px 0;
+}
+
+.date__sum--price {
+  background-color: rgba(244, 247, 254, 1);
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.date__sum--price > div {
+  background-color: #fff;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  border: 1px solid rgb(239, 239, 239);
+  border-radius: 15px;
+}
+/*  */
+.ticket-container {
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px;
+  border: 1px solid rgb(239, 239, 239);
+  width: 100%;
+  display: block;
+}
+
+.ticket-container > h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: rgba(51, 54, 63, 1);
+  margin-bottom: 1rem;
+}
+
+.ticket-item {
+  padding: 8px 20px;
+  border: 1px solid rgba(126, 134, 158, 0.25);
+  font-size: 14px;
+}
+.ticket-item > label {
+  flex: 3;
+}
+
+.ticket-item > div {
+  margin-left: 5px;
+  flex: 5;
+}
+.ticket-item > div > div:first-child {
+  flex: 3;
+}
+.ticket-item > div > div:last-child {
+  flex: 2;
+}
+
+.nguoilon {
+  width: 3rem;
+}
+
+.ticket-controls {
+  gap: 10px;
+  margin-left: 10px;
+}
+
+.ticket-controls > div {
+  cursor: pointer;
+  width: 1.3rem;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  height: 1.3rem;
+
+  background-color: #c9c9c9;
+}
+
+.date__info--list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.ticket-content {
+  font-size: 14px;
+  color: rgba(51, 54, 63, 1);
+  line-height: 20px;
+  margin-bottom: 1rem;
+}
+
+.ticket-price > div:last-child {
+  font-weight: 700;
+  color: rgba(0, 51, 78, 1);
+  line-height: 22px;
+  font-size: 20px;
+}
+.ticket-price > div:first-child {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(145, 155, 164, 1);
+  line-height: 22px;
+  margin-right: 5px;
+  text-decoration: line-through;
+}
+
+.ticket-container small {
+  font-size: 14px;
+  color: rgba(0, 51, 78, 1);
+  margin: 5px 0 1rem 0;
+}
+
+.date__node {
+  font-size: 12px;
+  margin: 0.7rem 0;
+  gap: 1rem;
+}
+
+.date__node > div > span:first-child {
+  margin-right: 5px;
+}
+
+.btn__cart--date {
+  padding: 0.8rem 1rem;
+  border-radius: 10px;
+  border: 1px solid var(--danger-color);
+  color: var(--danger-color);
+  background-color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn__buy--now {
+  padding: 0.8rem 1rem;
+  border-radius: 10px;
+  color: white;
+  background-color: var(--success-color);
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+}
+.hid__date {
+  display: none !important;
+}

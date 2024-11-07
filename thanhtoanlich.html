@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/app.css">
+    <link rel="stylesheet" href="./assets/css/thanhtoanlich.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="d-flex justify-content-between p-14">
+            <div>
+                <img src="assets/svg/logo.svg" alt="" />
+            </div>
+            <div class="d-flex">
+                <div class="header--icon icon-search">
+                    <img src="assets/svg/icon/Search_alt.svg" alt="" />
+                </div>
+                <div>
+                    <input type="text" class="input-search" placeholder="Search...">
+                </div>
+                <div class="header--icon icon-pin">
+                    <img src="assets/svg/icon/Pin.svg" alt="" />
+                </div>
+                <div class="province-list" style="display:none;">
+                    <ul>
+                        <li>Hà Nội</li>
+                        <li>Hồ Chí Minh</li>
+                        <li>Đà Nẵng</li>
+                        <li>Quảng Ninh</li>
+                        <li>Huế</li>
+                        <!-- Thêm các tỉnh thành khác vào đây -->
+                    </ul>
+                </div>
+                <div class="header--icon">
+                    <img src="assets/svg/icon/Filter.svg" alt="" />
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Gia sap sàn -->
+    <section class="Sale p-14 d-flex justify-content-between align-items-center">
+        <h2>GIÁ SẬP SÀN</h2>
+        <div class="d-flex align-items-center">
+            <div class="sale_icon"><img src="./assets/svg/icon/lichbieu/Time_atack_duotone.svg" alt=""></div>
+            <div class="sale__name--time">
+                KẾT THÚC TRONG
+            </div>
+            <span>00</span>
+            <span>40</span>
+            <span>00</span>
+        </div>
+
+    </section>
+    <!-- San pham -->
+    <section class="Pay-sanphamcha p-14">
+        <h2>1. Sản phẩm</h2>
+        <div class="Pay__product">
+            <div class="Pay__product-item d-flex align-items-center justify-content-between ">
+                <div class="Pay__product--content d-flex align-items-center">
+                    <div class="Pay--conten-check">
+                        <input id="checkbox--Pay" type="checkbox">
+                    </div>
+                    <p>Vang đóng: 800,000 VND</p>
+                </div>
+                <div class="Pay__product--number d-flex align-items-center justify-content-between">
+                    <span>-</span>
+                    <span>2</span>
+                    <span>+</span>
+                </div>
+            </div>
+
+            <div class="Pay__product-item d-flex align-items-center justify-content-between ">
+                <div class="Pay__product--content d-flex align-items-center">
+                    <div class="Pay--conten-check">
+                        <input id="checkbox--Pay" type="checkbox">
+                    </div>
+                    <p>Vang Nhập Khẩu: 1,200,000 VND</p>
+                </div>
+                <div class="Pay__product--number d-flex justify-content-between align-items-center">
+                    <span>-</span>
+                    <span>2</span>
+                    <span>+</span>
+                </div>
+            </div>
+        </div>
+        <!-- Số lít -->
+        <div class="capacity d-flex align-items-center">
+            <label class="capacity__item">
+                <input type="radio" name="capacity" value="650ml" hidden>
+                <p>650ml</p>
+            </label>
+            <label class="capacity__item">
+                <input type="radio" name="capacity" value="1000ml" hidden>
+                <p>1000ml</p>
+            </label>
+        </div>
+
+        <!-- thể laoij ruôuw -->
+        <div class="capacity d-flex align-items-center">
+            <label class="capacity__item ">
+                <input type="radio" name="wine" value="Vang Trắng" hidden>
+                <p>Vang Trắng</p>
+            </label>
+            <label class="capacity__item">
+                <input type="radio" name="wine" value="Vang đỏ" hidden>
+                <p>Vang đỏ</p>
+            </label>
+        </div>
+        <!-- Phụ kiện kèm theo  -->
+        <div class="capacity d-flex align-items-center">
+            <label class="capacity__item active__capacity">
+                <input type="radio" name="accessory" value="Kèm ly" hidden>
+                <p>Kèm ly</p>
+            </label>
+            <label class="capacity__item">
+                <input type="radio" name="accessory" value="Không kèm ly" hidden>
+                <p>Không kèm ly</p>
+            </label>
+        </div>
+    </section>
+    <div class="kc"></div>
+    <!-- Vaanf chuyen -->
+    <section class="p-14 Ship ">
+        <h2>2. Vận chuyển</h2>
+        <span class="freeShip d-flex align-items-center">
+            <span class="freeShip-check">
+                <input id="checkbox--Ship" type="checkbox">
+            </span>
+            <p>Miễn phí vận chuyển</p>
+        </span>
+        <div class="adderss_ship">
+            <label for="">
+                <p>Địa chỉ</p>
+            </label>
+            <br>
+            <input type="text" name="address" id="address" placeholder="HOÀNG CẦU, DỐNG ĐA, HÀ NỘI">
+        </div>
+        <div class="price__ship">
+            <span>Phí vận chuyển</span>
+            <span>40,000 VND</span>
+        </div>
+    </section>
+    <div class="kc"></div>
+    <!-- Giam gia -->
+    <section class="p-14 Ship ">
+        <h2>3. Mã giảm giá</h2>
+        <span class="freeShip d-flex align-items-center">
+            <span class="freeShip-check">
+                <input id="checkbox--Ship" type="checkbox">
+            </span>
+            <p>Miễn phí vận chuyển</p>
+        </span>
+        <div class="Pay__product">
+            <div class="Pay__product-item d-flex align-items-center justify-content-between ">
+                <div class="Pay__product--content d-flex align-items-center">
+                    <div class="Pay--conten-check">
+                        <input id="checkbox--Pay" type="checkbox">
+                    </div>
+                    <p>Giảm 50% tối đa 100k</p>
+                </div>
+            </div>
+            <div class="Pay__product-item d-flex align-items-center justify-content-between ">
+                <div class="Pay__product--content d-flex align-items-center">
+                    <div class="Pay--conten-check">
+                        <input id="checkbox--Pay" type="checkbox">
+                    </div>
+                    <p>Giảm 20k</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="kc"></div>
+    <!-- Thanh toan -->
+    <section class="Price_thanhtoan  p-14">
+        <div class="information__price p-14 ">
+            <div class="information__none">
+                <div class="price-lod d-flex al-center justify-content-between">
+                    <p>Tổng tiền:</p>
+                    <p>4,364,000 VND</p>
+                </div>
+                <div class="price-lod d-flex al-center justify-content-between">
+                    <p>Phí vận chuyển:</p>
+                    <p>Miễn phí</p>
+                </div>
+                <div class="price-lod d-flex al-center justify-content-between">
+                    <p>Giảm trừ khuyến mại:</p>
+                    <p>- 1,000,000 VND</p>
+                </div>
+            </div>
+            <div class="price-tong d-flex al-center justify-content-between">
+                <span>SỐ TIỀN THANH TOÁN</span>
+                <span>4,366,000 VDN</span>
+            </div>
+            <div class="seemore__price d-flex align-items-center">
+                <span>
+                    <p>Chi tiết</p>
+                </span>
+                <span>
+                    <img src=" ./assets/svg/icon/Icon_detail/Arrow-butom.svg" alt=""></span>
+            </div>
+        </div>
+        <!-- Thanh tona -->
+        <section class="div__thanhtona  d-flex justify-content-between align-items-center">
+            <div class="btn-cart">Thêm vào giỏ hàng</div>
+            <div class="btn-muangay bg-success">MUA NGAY</div>
+        </section>
+    </section>
+    <!-- nav  -->
+    <nav class="nav2">
+        <div class="d-flex justify-content-between p-14">
+            <div class="nav-item d-flex">
+                <img src="assets/svg/icon/menuFixed/Home.svg" alt="" />
+                <p class="mt-3">Home</p>
+            </div>
+            <div class="nav-item d-flex">
+                <img src="assets/svg/icon/menuFixed/Tickit.svg" alt="" />
+                <p class="mt-3">Vé của tôi</p>
+            </div>
+            <div class="nav-item d-flex">
+                <img src="assets/svg/icon/menuFixed/Product.svg" alt="" />
+                <p class="mt-3">Sản phẩm</p>
+            </div>
+            <div class="nav-item d-flex">
+                <img src="assets/svg/icon/menuFixed/Love.svg" alt="" />
+                <p class="mt-3"> Yêu thích</p>
+            </div>
+            <div class="nav-item d-flex">
+                <img src="assets/svg/icon/menuFixed/Profile.svg" alt="" />
+                <p class="mt-3">Cá nhân</p>
+            </div>
+        </div>
+    </nav>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+<script src="./assets/js/thanhtoanlich.js"></script>
+
+</html>
