@@ -447,8 +447,8 @@ p {
 
 .ticket-item {
   padding: 8px 20px;
-  border: 1px solid rgba(126, 134, 158, 0.25);
-  font-size: 14px;
+  /* border: 1px solid rgba(126, 134, 158, 0.25); */
+  font-size: 12px;
 }
 .ticket-item > label {
   flex: 3;
@@ -470,8 +470,10 @@ p {
 }
 
 .ticket-controls {
+  position: absolute;
+  right: 20px;
   gap: 10px;
-  margin-left: 10px;
+  margin-left: 50px;
 }
 
 .ticket-controls > div {
@@ -532,25 +534,60 @@ p {
 }
 
 .btn__cart--date {
-  padding: 0.8rem 1rem;
+  padding: 10px 20px;
   border-radius: 10px;
   border: 1px solid var(--danger-color);
   color: var(--danger-color);
   background-color: #fff;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 12px;
   cursor: pointer;
+  width: 50%;;
+  margin-top: 20px;
+  white-space: nowrap;
 }
-
+.hid__date {
+  display: none;
+}
 .btn__buy--now {
-  padding: 0.8rem 1rem;
+    padding: 10px 20px;
   border-radius: 10px;
   color: white;
   background-color: var(--success-color);
   font-weight: 600;
   font-size: 16px;
   cursor: pointer;
+  margin-top: 20px;
 }
-.hid__date {
-  display: none !important;
+.number-input .quantity{
+  border: none;
+}
+.number-input {
+  display: flex;
+  align-items: center;
+}
+
+.number-input button {
+  background-color: #ccc;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.number-input button:hover {
+  background-color: #ccc;
+}
+
+.number-input input {
+  width: 50px;
+  text-align: center;
+  border-radius: 4px;
+  margin: 0 10px;
+  padding: 5px;
+}
+
+.ticket-item{
+  position: relative;
 }
