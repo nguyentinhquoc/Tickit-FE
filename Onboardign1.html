@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/app.css" />
+    <title>02_Onboardign</title>
+    <style>
+        .onboardign {
+            background-color: rgba(175, 232, 233, 0.4);
+        }
+
+        .onboardign>div:first-child {
+            height: 3rem;
+            padding-top: 3rem;
+            font-size: 18px;
+            font-weight: 400;
+            cursor: pointer;
+            line-height: 24px;
+            color: rgba(118, 118, 118, 1);
+        }
+
+        .onboardign__image {
+            width: 100%;
+            padding: 2.4rem 0 7rem 0;
+        }
+
+        .onboardign__image>img {
+            transform: rotate(-4deg);
+            width: 80%;
+            object-fit: contain;
+        }
+
+        .onboardign__main {
+            padding: 2rem 1.5rem 3rem 1.5rem;
+            border-radius: 30px 30px 0 0;
+            background-color: #fff;
+        }
+
+        .onboardign__title {
+            width: 80%;
+            margin: 15px auto;
+
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 32px;
+            text-align: center;
+        }
+
+        .onboardign__content {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: center;
+            color: rgba(118, 118, 118, 1);
+        }
+
+        .onboardign__btn--item {
+            gap: 8px;
+        }
+
+        .onboardign__btn--item>span {
+            height: 8px;
+            width: 8px;
+            border-radius: 50%;
+            background-color: rgba(252, 101, 70, 1);
+            display: block;
+        }
+
+        .onboardign__btn--active {
+            width: 28px !important;
+            height: 8px;
+            border-radius: 50%;
+        }
+
+        .onboardign__btn {
+            position: relative;
+        }
+
+        .onboardign__btn>span {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-weight: 600;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .onboardign__main>div:first-child {
+            margin-bottom: 4rem;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="onboardign">
+        <div class=" d-flex justify-content-end  p-14">
+            <span>Skip</span>
+
+        </div>
+        <div class="onboardign__image d-flex justify-content-center">
+            <img loading="lazy"
+                src="https://s3-alpha-sig.figma.com/img/272b/1aac/898a4a56914aa32b3be30ce6fb0fd0be?Expires=1732492800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ZO6FAoQWHtxwd6S9hc8smoKRu9BI3KoLWs451q7eGd-FnKHAM19~MCw2rTubMUZqhym3YdjMTfSJqSwA1YCA49VZRRhQI-h1FEzs~36VEr5eC2oYyf8Jr1FNbVqPHElPrwwgax2bwKFFw-qW4zDGFfxXT23KUJn9B7ExuNhJxsJp6VDmYO7~tNsG2WHuBjW9ciS45Mz5CyOjDPFCtyW3ljCVk~eM58xJ-0K52itTtw1e4OFPhepRM3k8ELZ9WKZ2v3ajlRg1xnlW1uq4LtD9Xy0HiFbFya1AOoTaFEboI-NXURBnFq9BWlJ2zsEb6AERu0pwg8ldQX1KV8kHw49Cmg__"
+                alt="">
+        </div>
+        <div class="onboardign__main">
+            <div>
+                <div class="onboardign__title">
+                    Chương trình khách hàng
+                    thân thiết của SeABank
+                </div>
+                <div class="onboardign__content">
+                    Mua vé chương trình nghệ thuật “Ký ức miền Kinh Bắc” được tặng một thẻ tín dụng trị giá tối đa lên
+                    đến
+                    30 triệu đồng
+                </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center mt-20">
+                <div class=" onboardign__btn--item d-flex align-items-center ">
+                    <span class="onboardign__btn--active"></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="onboardign__btn">
+                    <img src="./assets/svg/icon/password/onvoardignbtn.svg" alt="">
+                    <span>
+                        30
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+<script>
+
+</script>
+
+
+</html>
